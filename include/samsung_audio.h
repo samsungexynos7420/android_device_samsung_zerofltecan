@@ -74,6 +74,14 @@
 #define DISABLE_CALL_CLOCK_SYNC
 
 /*
+ * Some device variants (often T-Mobile) have a separate voice processing IC
+ * (Audience EarSmart xxx).
+ * This hooks into the voice call session and enables, configures and disables
+ * this extra firmware so RX/TX streams can be routed by the driver.
+ */
+#define AUDIENCE_EARSMART_IC
+
+/*
  * The Wolfson/Cirruslogic chips need to shutdown the DAPM route completely
  * to be able to load a new firmware. Some of these chips need a delay after
  * shutodown to full poweroff the DSPs.

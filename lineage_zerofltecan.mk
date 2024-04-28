@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/zerofltexx
+LOCAL_PATH := device/samsung/zerofltecan
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -29,16 +29,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := lineage_zerofltexx
-PRODUCT_DEVICE := zerofltexx
-PRODUCT_MODEL := SM-G920F
+PRODUCT_NAME := lineage_zerofltecan
+PRODUCT_DEVICE := zerofltecan
+PRODUCT_MODEL := SM-G920W8
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	PRODUCT_NAME=zerofltexx \
-	PRIVATE_BUILD_DESC="zerofltexx-user 7.0 NRD90M G920FXXU6EVG1 release-keys"
+	PRODUCT_NAME=zerofltebmc \
+	PRIVATE_BUILD_DESC="zerofltebmc-user 7.0 NRD90M G920W8VLU6DVG1 release-keys"
 
-BUILD_FINGERPRINT := samsung/zerofltexx/zeroflte:7.0/NRD90M/G920FXXU6EVG1:user/release-keys
+BUILD_FINGERPRINT := samsung/zerofltebmc/zerofltebmc:7.0/NRD90M/G920W8VLU6DVG1:user/release-keys

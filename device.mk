@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/zerofltexx
+LOCAL_PATH := device/samsung/zerofltecan
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -51,4 +51,4 @@ $(call inherit-product, device/samsung/universal7420-common/device-common.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Call the proprietary
-$(call inherit-product, vendor/samsung/zerofltexx/zerofltexx-vendor.mk)
+$(call inherit-product, vendor/samsung/zerofltecan/zerofltecan-vendor.mk)

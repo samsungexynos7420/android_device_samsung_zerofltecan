@@ -9,7 +9,7 @@
 set -e
 
 VENDOR=samsung
-DEVICE=zerofltexx
+DEVICE=zerofltecan
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
